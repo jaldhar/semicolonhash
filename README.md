@@ -19,7 +19,7 @@ x86_64 Linux.  In any case it has only been tested on that platform.
 The ;# (pronounced "Semicolon Hash") language only has two commands:
 
 * ; add one to the accumulator
-* #  modulo the accumulator by 127, convert to ASCII character and output without
+* &#35; modulo the accumulator by 127, convert to ASCII character and output without
   a newline. After this, reset the accumulator to 0. Yes, 127 is correct.
 
 This interpreter reads from standard input and writes to standard output.
