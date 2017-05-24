@@ -3,7 +3,7 @@
 ## Intro
 
 This is an interpreter for a very simple esoteric programming language whose
-description I came across at [this stackexchange entry](https://codegolf.stackexchange.com/questions/121921/make-a-interpreter.)
+description I came across at [this stackexchange entry](https://codegolf.stackexchange.com/questions/121921/make-a-interpreter.).
 
 While the original link goes to a competion to get the smallest possible
 source code, I wanted to see how small I could make the executable while still
@@ -19,7 +19,7 @@ x86_64 Linux.  In any case it has only been tested on that platform.
 The ;# (pronounced "Semicolon Hash") language only has two commands:
 
 * ; add one to the accumulator
-* # modulo the accumulator by 127, convert to ASCII character and output without
+* #  modulo the accumulator by 127, convert to ASCII character and output without
   a newline. After this, reset the accumulator to 0. Yes, 127 is correct.
 
 This interpreter reads from standard input and writes to standard output.
@@ -36,6 +36,8 @@ There are some sample programs included:
 ## Copyright/License
 
 By Jaldhar H. Vyas <jaldhar@braincells.com>
+
 Copyright (C) 2017, Consolidated Braincells Inc. All rights reserved.
+
 "Do what thou wilt" shall be the whole of the license.
    
