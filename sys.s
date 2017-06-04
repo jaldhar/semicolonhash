@@ -20,21 +20,21 @@ sys_exit:
 sys_read:
     movq $0, %rax   # read syscall = 0
     syscall
-    cmpl $0, %eax
-    jl error
+    test %rax, %rax
+    js error
     ret
 
 sys_write:
     movq $1, %rax   # write syscall = 1
     syscall
-    cmpl $0, %eax
-    jl error
+    test %rax, %rax
+    js error
     ret
 
 error:
-    neg  %eax
-    movl %eax, errno
-    movl $-1, %eax
+    neg %rax
+    mov %rax, errno
+    sbb %rax, %rax
     ret
 
     .bss
